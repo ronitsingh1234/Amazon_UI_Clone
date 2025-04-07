@@ -139,7 +139,25 @@ backtop.addEventListener("click",()=>{
         top:0,
         behavior:"smooth"
     });
-})
+});
+
+
+
+const abtnleft = document.querySelector(".btnleft");
+const abtnright = document.querySelector(".btnright");
+
+abtnleft.addEventListener("click", ()=>{
+    const b = document.querySelector(".product-slide-5");
+    b.scrollLeft -= 1200;
+});
+
+
+abtnright.addEventListener("click", ()=>{
+    const b = document.querySelector(".product-slide-5");
+    b.scrollLeft += 1200;
+});
+
+
 
 
 
